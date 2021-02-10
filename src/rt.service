@@ -1,0 +1,22 @@
+import * as axios from 'axios';
+
+//const BASE = document.location.origin;
+const BASE = "https://stream.radioterminal.si";
+
+
+function history() {
+  const url = `${BASE}/zgodovina.json`;
+  return axios.get(url).then(x => x.data)
+}
+
+function now() {
+  const url = `${BASE}/sedaj.json`;
+  return axios.get(url).then(x => x.data)
+}
+
+
+export {
+  now,
+  history,
+}
+

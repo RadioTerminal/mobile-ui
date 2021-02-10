@@ -1,0 +1,68 @@
+{
+  "name": "rt",
+  "version": "1.0.0",
+  "description": "RT UI",
+  "author": "dz0ny <dz0ny@ubuntu.si>",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "build": "node build/build.js && rm -rf ../static && mv dist ../static"
+  },
+  "dependencies": {
+    "axios": "^0.17.1",
+    "azusa": "^1.0.2",
+    "bootstrap": "^4.5.3",
+    "node-sass": "^4.7.2",
+    "pretty-bytes": "^4.0.2",
+    "raven-js": "^3.27.2",
+    "sass-loader": "^6.0.7",
+    "vue": "^2.6.12",
+    "vue-router": "^3.4.9"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.2.6",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-runtime": "^6.22.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.22.0",
+    "chalk": "^2.4.2",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.28.11",
+    "eventsource-polyfill": "^0.9.6",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^1.1.11",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "html-webpack-plugin": "^2.30.1",
+    "node-notifier": "^5.4.3",
+    "offline-plugin": "^4.9.1",
+    "optimize-css-assets-webpack-plugin": "^3.2.1",
+    "ora": "^1.4.0",
+    "portfinder": "^1.0.28",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.6",
+    "rimraf": "^2.7.1",
+    "semver": "^5.7.1",
+    "shelljs": "^0.7.6",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^0.5.8",
+    "vue-loader": "^13.7.3",
+    "vue-style-loader": "^3.1.2",
+    "vue-template-compiler": "^2.6.12",
+    "webpack": "^3.12.0",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-dev-server": "^2.11.5",
+    "webpack-merge": "^4.2.2"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
